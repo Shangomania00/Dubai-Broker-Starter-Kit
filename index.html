@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dubai Real Estate Broker Starter Kit — bilingual Arabic/English interactive training website by SMT Institute and Al Hamoudi Real Estate." />
+  <meta name="theme-color" content="#0b0b0b" />
+  <title>Dubai Broker Starter Kit | دليل وسيط العقارات في دبي</title>
+  <link rel="preload" href="assets/smt-gold.png" as="image" />
+  <link rel="preload" href="assets/ahre-gold.png" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">تجاوز إلى المحتوى</a>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand-lockup" href="#top" aria-label="SMT Institute and Al Hamoudi Real Estate">
+        <img src="assets/smt-gold.png" alt="SMT Institute" class="brand-logo smt-logo" />
+        <span class="brand-divider"></span>
+        <img src="assets/ahre-gold.png" alt="Al Hamoudi Real Estate" class="brand-logo ahre-logo" />
+        <span class="brand-text" data-i18n="brandText">SMT × Al Hamoudi</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#overview" data-i18n="navOverview">النظرة العامة</a>
+        <a href="#process" data-i18n="navProcess">خطوات الصفقة</a>
+        <a href="#developers" data-i18n="navDevelopers">المطورون</a>
+        <a href="#tools" data-i18n="navTools">أدوات AI</a>
+        <a href="#checklist" data-i18n="navChecklist">قائمة المهام</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="language-toggle" id="languageToggle" aria-label="Switch language">EN</button>
+        <a class="gold-button small" href="#calculator" data-i18n="navCalculator">حاسبة الصفقة</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse-dot"></span><span data-i18n="heroEyebrow">دليل تفاعلي للوسطاء الجدد في دبي</span></div>
+          <h1 data-i18n="heroTitle">دليل وسيط العقارات في دبي</h1>
+          <p class="hero-lead" data-i18n="heroLead">موقع تدريبي كامل، سهل، ثنائي اللغة، يجمع السوق، القوانين، المصطلحات، خطوات الإغلاق، أخطاء الوسطاء، المطورين، المناطق الواعدة، وأدوات الذكاء الاصطناعي في تجربة واحدة.</p>
+          <div class="hero-actions">
+            <a class="gold-button" href="#overview" data-i18n="startNow">ابدأ الآن</a>
+            <a class="ghost-button" href="#sources" data-i18n="viewSources">مصادر البيانات</a>
+          </div>
+          <div class="trust-strip" aria-label="Key facts">
+            <div><strong>AED 917B+</strong><span data-i18n="stat2025Label">قيمة معاملات 2025</span></div>
+            <div><strong>270K+</strong><span data-i18n="statDealsLabel">معاملة عقارية</span></div>
+            <div><strong>2 Lang</strong><span data-i18n="statLangLabel">عربي / English</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="glass-card hero-card">
+            <div class="skyline" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span class="burj"></span><span></span><span></span>
+            </div>
+            <div class="hero-dashboard">
+              <div class="dashboard-header">
+                <span data-i18n="dashboardTitle">لوحة الوسيط الذكي</span>
+                <span class="live-chip" data-i18n="liveChip">تفاعلي</span>
+              </div>
+              <div class="mini-chart" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="deal-flow-preview">
+                <span data-i18n="flowLead">Lead</span>
+                <b></b><span data-i18n="flowView">Viewing</span>
+                <b></b><span data-i18n="flowMou">MOU</span>
+                <b></b><span data-i18n="flowTransfer">Transfer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary-strip" id="overview">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker" data-i18n="overviewKicker">الملخص حسب الفئات</span>
+          <h2 data-i18n="overviewTitle">كل ما يحتاجه الوسيط الجديد في مكان واحد</h2>
+          <p data-i18n="overviewBody">صممناه كمنتج تدريبي حقيقي: أرقام سوق، إجراءات، أسرار مهنية، قوائم مهام، وحاسبات عملية تساعد الوسيط يتعلم ويطبق بسرعة.</p>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section-pad market-section">
+      <div class="container two-col">
+        <div class="section-heading reveal">
+          <span class="section-kicker" data-i18n="marketKicker">بيانات السوق</span>
+          <h2 data-i18n="marketTitle">لقطة دبي العقارية بأرقام بسيطة</h2>
+          <p data-i18n="marketBody">الأرقام الرسمية تستخدم لتعليم الوسيط كيف يتحدث بثقة، لا للمبالغة. دائماً حدّث الأرقام قبل عرضها على العميل.</p>
+        </div>
+        <div class="data-panel reveal">
+          <div class="data-tabs" role="tablist" aria-label="Market years">
+            <button class="tab is-active" data-market-tab="2025">2025</button>
+            <button class="tab" data-market-tab="2024">2024</button>
+          </div>
+          <div class="stat-grid" id="marketStats"></div>
+          <div class="source-note" data-i18n="marketNote">ملاحظة: الأرقام مأخوذة من بيانات منشورة رسمياً، ويجب تحديثها عند الاستخدام التجاري.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad ecosystem-section">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker" data-i18n="ecosystemKicker">فهم المنظومة</span>
+          <h2 data-i18n="ecosystemTitle">من هو المسؤول عن ماذا؟</h2>
+          <p data-i18n="ecosystemBody">هذه البطاقات تشرح الكلمات التي يسمعها الوسيط يومياً: DLD، RERA، Trakheesi، Oqood، Ejari، NOC وغيرها.</p>
+        </div>
+        <div class="filter-pills" id="ecosystemFilters"></div>
+        <div class="card-grid" id="ecosystemGrid"></div>
+      </div>
+    </section>
+
+    <section class="section-pad process-section" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker" data-i18n="processKicker">من Lead إلى Commission</span>
+          <h2 data-i18n="processTitle">طريقة إغلاق الصفقة بدون تعقيد</h2>
+        </div>
+        <div class="process-layout reveal">
+          <div class="process-tabs" id="processTabs"></div>
+          <div class="process-content glass-card" id="processContent"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad calculator-section" id="calculator">
+      <div class="container calculator-grid">
+        <div class="section-heading reveal">
+          <span class="section-kicker" data-i18n="calcKicker">حاسبة سريعة</span>
+          <h2 data-i18n="calcTitle">احسب تكلفة صفقة بيع في دبي</h2>
+          <p data-i18n="calcBody">أدخل السعر ونوع العقار. الحاسبة تعليمية وتوضح الرسوم الأساسية، وليست بديلاً عن موظف التسجيل أو المستشار القانوني.</p>
+        </div>
+        <div class="calculator-card glass-card reveal">
+          <label for="priceInput" data-i18n="priceLabel">سعر العقار بالدرهم</label>
+          <input id="priceInput" type="number" min="0" value="1500000" inputmode="decimal" />
+          <div class="form-row">
+            <label><input type="checkbox" id="buyerPaysFullDld" checked /> <span data-i18n="buyerPaysLabel">المشتري يدفع 4% كاملة حسب الاتفاق التجاري</span></label>
+            <label><input type="checkbox" id="includeMortgage" /> <span data-i18n="mortgageLabel">إضافة رسم رهن 0.25%</span></label>
+          </div>
+          <div class="calc-results" id="calcResults"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad developers-section" id="developers">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker" data-i18n="devKicker">المطورون</span>
+          <h2 data-i18n="devTitle">كيف تفهم كل مطور بسرعة؟</h2>
+          <p data-i18n="devBody">لا تحفظ أسماء فقط. افهم USP، نوع العميل المناسب، ونقطة الحذر قبل ما ترشح مشروع.</p>
+        </div>
+        <div class="search-line">
+          <input id="developerSearch" type="search" data-i18n-placeholder="searchDeveloper" placeholder="ابحث عن مطور أو USP" />
+        </div>
+        <div class="developer-grid" id="developerGrid"></div>
+      </div>
+    </section>
+
+    <section class="section-pad gems-section">
+      <div class="container two-col reverse-mobile">
+        <div class="gem-map reveal" aria-hidden="true">
+          <div class="map-ring ring-one"></div>
+          <div class="map-ring ring-two"></div>
+          <div class="pin p1">Dubai South</div>
+          <div class="pin p2">Al Jaddaf</div>
+          <div class="pin p3">Dubai Islands</div>
+          <div class="pin p4">Expo City</div>
+        </div>
+        <div class="section-heading reveal">
+          <span class="section-kicker" data-i18n="gemsKicker">Hidden Gems</span>
+          <h2 data-i18n="gemsTitle">مناطق واعدة لا تبيعها كضمان</h2>
+          <p data-i18n="gemsBody">المنطقة الواعدة تعني وجود محركات نمو، وليس وعد ربح مؤكد. الوسيط المحترف يشرح الفرصة والمخاطر معاً.</p>
+          <div class="accordion" id="gemsAccordion"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad nationalities-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker" data-i18n="natKicker">الجنسيات والشرائح</span>
+          <h2 data-i18n="natTitle">كيف تتعامل مع شرائح المشترين؟</h2>
+          <p data-i18n="natBody">بيانات DLD العامة لا تعرض جنسية كل مشتري داخل جدول المعاملات. لذلك يظهر هذا الجزء كذكاء سوقي عام، وليس رقم رسمي نهائي.</p>
+        </div>
+        <div class="nationality-grid" id="nationalityGrid"></div>
+      </div>
+    </section>
+
+    <section class="section-pad mistakes-section">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker" data-i18n="mistakesKicker">الأسرار والإخفاقات</span>
+          <h2 data-i18n="mistakesTitle">أخطاء تكلف الوسطاء صفقات حقيقية</h2>
+        </div>
+        <div class="mistake-slider glass-card reveal">
+          <button class="circle-btn" id="prevMistake" aria-label="Previous">‹</button>
+          <div id="mistakeCard" class="mistake-card"></div>
+          <button class="circle-btn" id="nextMistake" aria-label="Next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad tools-section" id="tools">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker" data-i18n="toolsKicker">AI Broker Stack</span>
+          <h2 data-i18n="toolsTitle">أدوات تساعد الوسيط يشتغل أسرع وأذكى</h2>
+          <p data-i18n="toolsBody">الأداة لا تغني عن الخبرة، لكنها تختصر وقت البحث، التصميم، المتابعة، والتحليل.</p>
+        </div>
+        <div class="tools-board" id="toolsBoard"></div>
+      </div>
+    </section>
+
+    <section class="section-pad glossary-section">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker" data-i18n="glossaryKicker">قاموس الوسيط</span>
+          <h2 data-i18n="glossaryTitle">مصطلحات لازم تعرفها</h2>
+        </div>
+        <div class="search-line">
+          <input id="glossarySearch" type="search" data-i18n-placeholder="searchGlossary" placeholder="ابحث عن مصطلح" />
+        </div>
+        <div class="glossary-grid" id="glossaryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section-pad checklist-section" id="checklist">
+      <div class="container checklist-layout">
+        <div class="section-heading reveal">
+          <span class="section-kicker" data-i18n="checkKicker">خطة تنفيذ</span>
+          <h2 data-i18n="checkTitle">قائمة مهام أول 30 يوم</h2>
+          <p data-i18n="checkBody">اختر المهام التي أنجزتها. يتم حفظ التقدم على نفس المتصفح.</p>
+          <div class="progress-shell"><span id="progressBar"></span></div>
+          <strong id="progressText" class="progress-text"></strong>
+        </div>
+        <div class="checklist-card glass-card reveal" id="checklistItems"></div>
+      </div>
+    </section>
+
+    <section class="section-pad quiz-section">
+      <div class="container quiz-card glass-card reveal">
+        <div>
+          <span class="section-kicker" data-i18n="quizKicker">اختبار سريع</span>
+          <h2 data-i18n="quizTitle">هل أنت جاهز لأول صفقة؟</h2>
+          <p data-i18n="quizBody">جاوب على سؤال واحد كل مرة، وتعلم من الإجابة فوراً.</p>
+        </div>
+        <div id="quizBox"></div>
+      </div>
+    </section>
+
+    <section class="section-pad sources-section" id="sources">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker" data-i18n="sourcesKicker">مصادر ودقة</span>
+          <h2 data-i18n="sourcesTitle">مصادر البيانات المستخدمة</h2>
+          <p data-i18n="sourcesBody">هذا الموقع تعليمي. استخدم الروابط الرسمية لتحديث الأرقام والرسوم قبل أي عرض أو تدريب.</p>
+        </div>
+        <div class="sources-grid" id="sourcesGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logos">
+          <img src="assets/smt-white.png" alt="SMT Institute" />
+          <img src="assets/ahre-white.png" alt="Al Hamoudi Real Estate" />
+        </div>
+        <p data-i18n="footerText">دليل تدريبي تفاعلي للوسطاء الجدد في دبي — مبني بأسلوب فاخر وسهل الفهم.</p>
+      </div>
+      <div class="footer-contact">
+        <span>SMT Institute · smtu.ae</span>
+        <span>Al Hamoudi Real Estate · info@ahre.ae</span>
+        <span>WhatsApp · +971 50 880 0104</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="app.js"></script>
+</body>
+</html>
